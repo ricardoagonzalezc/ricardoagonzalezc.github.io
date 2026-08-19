@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo A. González Contreras — Mechanical Engineer</title>
+  <meta name="description" content="Mechanical engineer focused on process, reliability, and automation. Portfolio of data-driven engineering projects.">
+
+  <!-- Google Fonts: a technical mono face for labels/data, a geometric sans for headings and body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <!-- A simple fixed header with your name and jump links to each section (id="..." matches href="#...") -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav__brand">R.A.G.C.</a>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="grid-overlay" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow">Mechanical Engineer — Portfolio</p>
+        <h1 class="hero__name">Ricardo A.<br>González Contreras</h1>
+        <p class="hero__role">Process &amp; Reliability Engineer, specializing in manufacturing systems &amp; data-driven maintenance</p>
+
+        <!-- This "title block" mimics the info block found on engineering drawings — -->
+        <!-- a small nod to the field, and a fast way for a recruiter to scan the essentials -->
+        <dl class="titleblock">
+          <div class="titleblock__cell">
+            <dt>Discipline</dt>
+            <dd>Process / Reliability / Automation</dd>
+          </div>
+          <div class="titleblock__cell">
+            <dt>Location</dt>
+            <dd>Madrid, Spain</dd>
+          </div>
+          <div class="titleblock__cell">
+            <dt>Currently</dt>
+            <dd>Production Process Engineer, G+D</dd>
+          </div>
+          <div class="titleblock__cell">
+            <dt>Rev.</dt>
+            <dd>2026.08</dd>
+          </div>
+        </dl>
+
+        <div class="hero__links">
+          <a class="btn btn--primary" href="mailto:YOUR-EMAIL@example.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/ricardoagonzalezc/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/ricardoagonzalezc" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="section__inner">
+        <p class="section__label">01 — About</p>
+        <p class="lede">
+          I'm a mechanical engineer focused on how systems perform once they leave the drawing board —
+          from high-volume manufacturing lines to complex industrial installations. My work spans
+          commissioning, maintenance, and process optimization across EV, beverage, and metal
+          manufacturing.
+        </p>
+        <p class="body-text">
+          I'm particularly interested in applying Lean methodologies, reliability engineering, and
+          data analysis to improve OEE and operational efficiency. The projects below are where I
+          experiment with tools and approaches for monitoring, analyzing, and improving processes —
+          built to sharpen the same instincts I use on the plant floor.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section--alt">
+      <div class="section__inner">
+        <p class="section__label">02 — Projects</p>
+        <h2 class="section__title">Dashboards &amp; analysis tools</h2>
+
+        <div class="projects">
+
+          <!-- Each project is a "card" — repeat this <article> block to add more projects -->
+          <article class="project-card">
+            <p class="project-card__sheet">Sheet 01 / 03</p>
+            <h3 class="project-card__title">Equipment Failure Predictor</h3>
+            <p class="project-card__desc">
+              Anomaly detection for HVAC equipment using Isolation Forest, built around concepts
+              from the NASA IMS bearing dataset — flagging early signs of mechanical failure
+              before they become downtime.
+            </p>
+            <ul class="project-card__tags">
+              <li>Python</li>
+              <li>scikit-learn</li>
+              <li>Streamlit</li>
+            </ul>
+            <a class="project-card__link" href="https://equipment-failure-predictor-hvac.streamlit.app" target="_blank" rel="noopener">
+              Open dashboard →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-card__sheet">Sheet 02 / 03</p>
+            <h3 class="project-card__title">Process Capability Analyzer</h3>
+            <p class="project-card__desc">
+              A statistical process control tool for evaluating whether a manufacturing process
+              is capable of meeting spec — Cp, Cpk, and distribution analysis in an interactive
+              dashboard.
+            </p>
+            <ul class="project-card__tags">
+              <li>Python</li>
+              <li>SPC</li>
+              <li>Streamlit</li>
+            </ul>
+            <a class="project-card__link" href="https://process-capability-analyzer.streamlit.app" target="_blank" rel="noopener">
+              Open dashboard →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-card__sheet">Sheet 03 / 03</p>
+            <h3 class="project-card__title">Energy Consumption Monitor</h3>
+            <p class="project-card__desc">
+              A monitoring dashboard for tracking energy usage patterns over time, built to surface
+              inefficiencies the same way a facilities team would spot them on a trend chart.
+            </p>
+            <ul class="project-card__tags">
+              <li>Python</li>
+              <li>Data Viz</li>
+              <li>Streamlit</li>
+            </ul>
+            <a class="project-card__link" href="https://energy-consumption-monitor-dashboard.streamlit.app" target="_blank" rel="noopener">
+              Open dashboard →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BACKGROUND ============ -->
+    <section id="background" class="section">
+      <div class="section__inner">
+        <p class="section__label">03 — Background</p>
+        <p class="lede">
+          I've been interested in engineering from an early age — a natural curiosity for machines,
+          tools, and how things are put together.
+        </p>
+        <p class="body-text">
+          Since graduating in 2021, I've focused on gaining hands-on experience and continuously
+          building on it — across roles in Venezuela, Mexico, the US, and now Spain. I believe
+          growth comes from challenge and collaboration, and I'm always looking for the next thing
+          to learn.
+        </p>
+        <p class="body-text">
+          Outside of core process work, I follow aerospace manufacturing, the auto industry,
+          machinery manufacturing, and microelectronics — I tinker with ESP32 and Arduino when I
+          get the chance.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer id="contact" class="footer">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__name">Ricardo A. González Contreras</p>
+        <p class="footer__role">Mechanical Engineer — Madrid, Spain</p>
+      </div>
+      <div class="footer__links">
+        <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/ricardoagonzalezc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ricardoagonzalezc" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://share.streamlit.io/user/ricardoagonzalezc" target="_blank" rel="noopener">Streamlit</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
