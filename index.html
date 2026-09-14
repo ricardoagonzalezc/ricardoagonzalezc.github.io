@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ricardo A. González Contreras — Mechanical Engineer</title>
   <meta name="description" content="Mechanical engineer focused on process, reliability, and automation. Portfolio of data-driven engineering projects and other interesting things.">
-
+ 
   <!-- Google Fonts: a technical mono face for labels/data, a geometric sans for headings and body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
+ 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <!-- Navigation Menu -->
   <header class="site-header">
     <nav class="nav">
@@ -27,9 +27,9 @@
       </div>
     </nav>
   </header>
-
+ 
   <main id="top">
-
+ 
     <!--  HERO  -->
     <section class="hero">
       <div class="grid-overlay" aria-hidden="true"></div>
@@ -37,7 +37,7 @@
         <p class="eyebrow">Mechanical Engineer — Portfolio</p>
         <h1 class="hero__name">Ricardo A.<br>González Contreras</h1>
         <p class="hero__role">Process &amp; Reliability Engineer, specializing in manufacturing systems &amp; data-driven maintenance</p>
-
+ 
         <!-- This "title block" mimics the info block found on engineering drawings — -->
         <dl class="titleblock">
           <div class="titleblock__cell">
@@ -54,10 +54,10 @@
           </div>
           <div class="titleblock__cell">
             <dt>Rev.</dt>
-            <dd>2026.08</dd>
+            <dd>2026.09</dd>
           </div>
         </dl>
-
+ 
         <div class="hero__links">
           <a class="btn btn--primary" href="mailto:ricardoagonzalez24@gmail.com">Email me</a>
           <a class="btn" href="https://www.linkedin.com/in/ricardoagonzalezc/" target="_blank" rel="noopener">LinkedIn</a>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!--  ABOUT  -->
     <section id="about" class="section">
       <div class="section__inner">
@@ -84,15 +84,17 @@
         </p>
       </div>
     </section>
-
+ 
     <!--  PROJECTS  -->
     <section id="projects" class="section section--alt">
       <div class="section__inner">
         <p class="section__label">02 — Projects</p>
+ 
+        <!-- ───────────── GROUP 1: Dashboards ───────────── -->
         <h2 class="section__title">Dashboards &amp; analysis tools</h2>
-
+ 
         <div class="projects">
-
+ 
           <!-- Each project is a "card" — I can replicate this <article> block to add more projects -->
           <article class="project-card">
             <p class="project-card__sheet">Sheet 01 / 03</p>
@@ -111,7 +113,7 @@
               Open dashboard →
             </a>
           </article>
-
+ 
           <article class="project-card">
             <p class="project-card__sheet">Sheet 02 / 03</p>
             <h3 class="project-card__title">Process Capability Analyzer</h3>
@@ -129,7 +131,7 @@
               Open dashboard →
             </a>
           </article>
-
+ 
           <article class="project-card">
             <p class="project-card__sheet">Sheet 03 / 03</p>
             <h3 class="project-card__title">Energy Consumption Monitor</h3>
@@ -147,11 +149,100 @@
               Open dashboard →
             </a>
           </article>
-
+ 
         </div>
+ 
+        <!-- ───────────── GROUP 2: Mechanical design & automation ───────────── -->
+        <!--
+          NOTE: every value in the spec block below is a PLACEHOLDER from our
+          estimate — replace each one with your final calculated numbers before
+          you push this live. Same for the two hrefs at the bottom of the card.
+        -->
+        <h2 class="section__title section__title--group">Mechanical design &amp; automation</h2>
+ 
+        <div class="projects projects--wide">
+ 
+          <article class="project-card project-card--featured">
+            <p class="project-card__sheet">Sheet 01 / 01</p>
+            <h3 class="project-card__title">Belt Conveyor System</h3>
+ 
+            <figure class="project-card__media">
+              <video
+                class="project-card__video"
+                poster="assets/img/conveyor-poster.jpg"
+                controls
+                muted
+                loop
+                playsinline
+                preload="none">
+                <source src="assets/video/conveyor-walkthrough.mp4" type="video/mp4">
+                <p class="project-card__desc">
+                  Your browser can't play this video.
+                  <a href="assets/video/conveyor-walkthrough.mp4">Download the walkthrough (MP4)</a>.
+                </p>
+              </video>
+              <figcaption class="project-card__caption">
+                Assembly walkthrough — frame, roller set, belt guides, and drive mount.
+              </figcaption>
+            </figure>
+ 
+            <p class="project-card__desc">
+              A complete conveyor design taken from frame geometry through drive selection:
+              structural frame, roller set, belt guides, take-up mechanism, and motor mount.
+              Drive sizing is derived from belt pull rather than picked from a catalogue, with
+              the full calculation published alongside the model.
+            </p>
+ 
+            <!-- Spec block — mirrors the hero title block, reads like a drawing header -->
+            <dl class="specblock">
+              <div class="specblock__cell">
+                <dt>Belt</dt>
+                <dd>3900 × 855 mm</dd>
+              </div>
+              <div class="specblock__cell">
+                <dt>Bed type</dt>
+                <dd>Slider</dd>
+              </div>
+              <div class="specblock__cell">
+                <dt>Design load</dt>
+                <dd>60 kg</dd>
+              </div>
+              <div class="specblock__cell">
+                <dt>Belt speed</dt>
+                <dd>0.30 m/s</dd>
+              </div>
+              <div class="specblock__cell">
+                <dt>Drive torque</dt>
+                <dd>11.1 N·m</dd>
+              </div>
+              <div class="specblock__cell">
+                <dt>Drive</dt>
+                <dd>0.25 hp, 20:1 worm</dd>
+              </div>
+            </dl>
+ 
+            <ul class="project-card__tags">
+              <li>Onshape</li>
+              <li>Machine Design</li>
+              <li>Drive Sizing</li>
+              <li>GD&amp;T</li>
+            </ul>
+ 
+            <div class="project-card__links">
+              <a class="project-card__link" href="#" target="_blank" rel="noopener">
+                Open CAD model →
+              </a>
+              <a class="project-card__link" href="#" target="_blank" rel="noopener">
+                Calculations &amp; drawings →
+              </a>
+            </div>
+          </article>
+ 
+        </div>
+ 
       </div>
     </section>
-
+ 
     <!--  BACKGROUND  -->
     <section id="background" class="section">
       <div class="section__inner">
@@ -173,9 +264,9 @@
         </p>
       </div>
     </section>
-
+ 
   </main>
-
+ 
   <!--  FOOTER / CONTACT  -->
   <footer id="contact" class="footer">
     <div class="footer__inner">
@@ -191,6 +282,6 @@
       </div>
     </div>
   </footer>
-
+ 
 </body>
 </html>
